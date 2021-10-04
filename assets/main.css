@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+}
+/*#0A1330*/
+body {
+	background-image: url('bg-pens.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.wrapper {
+	padding: 4rem;
+	opacity: 1;
+}
+.wrapper.transparent {
+	opacity: .5;
+}
+h1 {
+	color: white;
+}
+.row {
+	margin-top: 1rem;
+	width: 100%;
+}
+.table {
+	width: 66%;
+	float: left;
+}
+.form {
+	width: 32%;
+	float: left;
+	margin-right: 2%;
+}
+.table-box {
+	
+}
+.table-box table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-radius: 4px;
+	overflow: hidden;
+	background: #fafafa;
+	text-align: center;
+}
+th, td {
+	padding: 10px 10px;
+}
+th {
+	color: #fafafa;
+	background: #00BAF6;
+}
+tr:nth-child(odd) {
+	background: #eeeeee;
+}
+.w-5 {
+	width: 20px;
+}
+.h-5 {
+	height: 20px;
+}
+.delete-ico {
+	color: red;
+}
+.edit-ico {
+	color: green;
+}
+.form-box {
+	background: #fafafa;
+	padding: 25px 30px 65px 30px;
+	border-radius: 4px;
+}
+.form-search {
+	float: right;
+	background: #fafafa;
+	padding: 2px 10px 0;
+	border-radius: 4px;
+	width: 40%;
+	margin-bottom: 10px;
+}
+.form h2 {
+	margin-bottom: 10px;
+	text-align: center;
+}
+.form-box .err-message {
+	color: red;
+	display: none;
+}
+form h2 {
+	color: #0A1330;
+}
+form .form-control {
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+form .input-radio {
+	margin-top: 10px;
+	font-size: 14px;
+}
+form .input-radio .male,
+form .input-radio .female {
+	margin: 4px 0;
+}
+form .input-radio span {
+	font-size: 16px;
+}
+form .form-control input {
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid #e91e63;
+	outline: none;
+}
+form .form-control span {
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: .5s;
+	color: #666;
+}
+form .form-control input:focus {
+	border-bottom: 2px solid #00BAF6;
+}
+form .form-control input:focus ~ span,
+form .form-control input:valid ~ span {
+	color: #e91e63;
+	font-size: 12px;
+	transform: translateY(-20px);
+}
+
+.popup_box{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 350px;
+	background: #fafafa;
+	text-align: center;
+	align-items: center;
+	padding: 20px;
+	z-index: 9999;
+	border-radius: 4px;
+	display: none;
+}
+.popup_box h2{
+	color: #1b2631;
+	margin-bottom: 5px;
+}
+.popup_box label{
+	font-size: 16px;
+	color: #404040;
+}
+.btn {
+	width: 100px !important;
+	border: none;
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 14px;
+	border-radius: 4px;
+	padding: 10px;
+}
+.float-r {
+	float: right;
+}
+.btn-save {
+	background: #00BAF6;
+}
+.btn-save:hover{
+	background: #009ed1;
+}
+.btn-cancel {
+	background: #c9bab9;
+}
+.btn-cancel:hover{
+	background: #aba09f;
+}
+.btn-delete {
+	background: #ff3333;
+}
+.btn-delete:hover{
+	background: #e60000;
+}
+.search {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	border-radius: 50px;
+	transition: .5s;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.search.active {
+	width: 360px;
+}
+.search .icon {
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 10px;
+	color: #2573ef;
+	cursor: pointer;
+}
+.search .input {
+	position: relative;
+	width: 300px;
+	height: 50px;
+	left: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.search .input input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	padding: 0;
+}
